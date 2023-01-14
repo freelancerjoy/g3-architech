@@ -1,0 +1,164 @@
+:root {
+    --prymari-color: #131313;
+    --secondary-color: #424242;
+    --secondary-dark: #727272;
+    --highlight-color: #FF900E;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* -------------------
+Header section style  */
+.header {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 144, 14, 0.1);
+}
+.header__container {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    max-width: 1000px;
+}
+.header__logo--tittle{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--prymari-color);
+}
+.header__link {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header__link li {
+    list-style: none;
+}
+.header__link li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--prymari-color)
+}
+
+/* --------------------
+Baner section design  */
+.baner {
+    padding-top: 50px;
+    background: rgba(255, 144, 14, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.baner__text {
+    max-width: 750px;
+    width: 100%;
+    text-align: center;
+    padding: 0px 10px;
+}
+.baner__tittle {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 5px 0px;
+    color: var(--prymari-color);
+}
+.baner__decription {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--secondary-dark);
+}
+.baner__btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding: 15px 22px;
+    background-color: var(--highlight-color);
+    border-style: none;
+    border-radius: 8px;
+}
+.banner-image{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+.banner-image .baner-image__img{
+    width: 80%;
+}
+/* ----------------------------
+our-fratures Section design  */
+.our-fratures{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.our-fratures__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+}
+.our-fratures__images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.our-fratures--image img {
+    width: 100%;
+}
+.our-fratures__text {
+
+}
+.our-fratures__tittle{
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 35px;
+    margin: 0px;
+}
+.our-fratures__tittle .middle--text{
+    color: var(--prymari-color);
+    font-weight: 700;
+}
+.our-fratures__tittle .end--text{
+    color: var(--highlight-color);
+    font-weight: 700;
+}
+.our-fratures__description {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    line-height: 26px;
+    margin: 10px 0px 25px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide {
+    display: none
+}
