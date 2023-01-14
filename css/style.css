@@ -255,8 +255,63 @@ Some facts style design  */
     color: var(--secondary-dark);
     margin: 0;
 }
+.spoors {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
 
+}
+.spoors__container{
+    width: 100%;
+    max-width: 80%;
+    text-align: center;
+}
+.spoors__tittle {
+    font-size: 35px;
+    color: var(--prymari-color);
 
+}
+.spoors__description{ 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--secondary-dark);
+}
+.spoors__images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+.spoors__images img {
+    width: 130px;
+    filter: grayscale(1);
+    margin-top: 35px;
+}
+
+/* -------------------------
+Footer style design  */
+.footer {
+    display: flex;
+    justify-content: center;
+}
+.footer__container{
+    width: 100%;
+    max-width: 80%;
+    background-color: #FFF4E7;
+    height: 70px;
+    padding: 10px 0px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.footer__text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--secondary-dark);
+}
 
 
 
