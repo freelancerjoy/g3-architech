@@ -23,7 +23,7 @@ Header section style  */
     display: flex;
     justify-content:space-between;
     width: 100%;
-    max-width: 1000px;
+    max-width: 80%;
 }
 .header__logo--tittle{
     font-size: 28px;
@@ -88,11 +88,12 @@ Baner section design  */
 }
 .banner-image .baner-image__img{
     width: 80%;
+    padding-bottom: 30px;
 }
 /* ----------------------------
 our-fratures Section design  */
 .our-fratures{
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
@@ -313,8 +314,57 @@ Footer style design  */
     color: var(--secondary-dark);
 }
 
-
-
+/* Start respoosive Medeia queary  */
+@media only screen and (max-width: 576px) {
+    .baner__tittle {
+        font-size: 25px;
+    }
+    .baner__decription {
+        padding: 0px 20px;
+    }
+    .our-fratures__container {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+    }
+    .our-fratures__images {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 20px;
+    }
+    .our-fratures__text {
+        margin-top: 30px;
+        text-align: center;
+        padding: 0px 20px;
+    }
+    .experince {
+        margin-top: 30px;
+    }
+    .experince__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .experince__category__person { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .experince__category__person--btn {
+        margin: 20px 0px;
+        
+    }
+    .some-facts__tittle {
+        text-align: center;
+    }
+    .some-facts, .spoors{
+        margin-top: 50px;
+    }
+    .some-facts__items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .spoors__images {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
 
 
 
