@@ -465,6 +465,9 @@ Footer style design  */
     .baner__decription {
         padding: 0px 20px;
     }
+    .banner-image .baner-image__img{
+        width: 85%;
+    }
     .our-fratures__container {
         grid-template-columns: repeat(1, 1fr);
         column-gap: 10px;
