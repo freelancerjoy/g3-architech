@@ -4,14 +4,15 @@
     --secondary-dark: #727272;
     --highlight-color: #FF900E;
 }
+
+/* ------------------
+Comon Design  */
 body {
     font-family: 'Work Sans', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/* ------------------
-Comon Design  */
 .horizental__line {
     border: 1px solid #ddd;
 }
@@ -87,7 +88,8 @@ Baner section design  */
     transition: 1s;
 }
 .baner__btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) ;
+    cursor: pointer;
 }
 .banner-image{
     display: flex;
@@ -120,9 +122,6 @@ our-fratures Section design  */
 }
 .our-fratures--image img {
     width: 100%;
-}
-.our-fratures__text {
-
 }
 .our-fratures__tittle{
     color: var(--secondary-color);
@@ -182,7 +181,6 @@ our-fratures Section design  */
     border-radius: 8px;
     padding: 15px 25px 2px 25px;
     margin-top: 15px;
-
  }
 .experince__category__tittle {
     font-size: 18px;
@@ -218,6 +216,7 @@ our-fratures Section design  */
     color: var(--highlight-color);
     background-color: #eee;
     border: none;
+    cursor: pointer;
 }
 .experince__category__person :hover span{
     color: var(--highlight-color);
@@ -239,11 +238,11 @@ Some facts style design  */
     width: 100%;
     max-width: 80%;
 }
-.some-facts__tittle h1{
+.some-facts__text h1{
     font-size: 35px;
     color: var(--prymari-color);
 }
-.some-facts__tittle p{
+.some-facts__text p{
     font-size: 16px;
     color: var(--secondary-dark);
 }
@@ -264,8 +263,8 @@ Some facts style design  */
 }
 .some-facts__box:hover {
     background-color: #FF900E;
-    transform: scale(1.1);
-    color: wheat;
+    transform: scale(1.1) translateY(-15px);
+    cursor: pointer;
 }
 .some-facts__box h1{
     font-size: 35px;
@@ -284,7 +283,6 @@ Some facts style design  */
     display: flex;
     justify-content: center;
     margin: 100px 0px;
-
 }
 .spoors__container{
     width: 100%;
@@ -294,7 +292,6 @@ Some facts style design  */
 .spoors__tittle {
     font-size: 35px;
     color: var(--prymari-color);
-
 }
 .spoors__description{ 
     font-size: 14px;
@@ -307,35 +304,11 @@ Some facts style design  */
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
-
 }
-.spoors__images img {
+.spoors__images .spoors__images--img {
     width: 130px;
     filter: grayscale(1);
     margin-top: 35px;
-}
-
-/* -------------------------
-Footer style design  */
-.footer {
-    display: flex;
-    justify-content: center;
-}
-.footer__container{
-    width: 100%;
-    max-width: 80%;
-    background-color: #FFF4E7;
-    height: 70px;
-    padding: 10px 0px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-.footer__text p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    color: var(--secondary-dark);
 }
 
 /* ----------------------
@@ -414,6 +387,10 @@ justify-content: center;
     margin: 20px 0px 40px 0px;
     transition: 1s;
 }
+.Contact__btn:hover {
+    transform: translateX(5px);
+    cursor: pointer;
+}
 .contact__info {
     display: flex;
     justify-content: center;
@@ -442,6 +419,28 @@ justify-content: center;
     color: var(--secondary-dark);
 }
 
+/* -------------------------
+Footer style design  */
+.footer {
+    display: flex;
+    justify-content: center;
+}
+.footer__container{
+    width: 100%;
+    max-width: 80%;
+    background-color: #FFF4E7;
+    height: 70px;
+    padding: 10px 0px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.footer__text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--secondary-dark);
+}
 
 
 /* Start respoosive Medeia queary  */
@@ -460,7 +459,7 @@ justify-content: center;
         flex-direction: column;
         padding: 0;
     }
-    .baner__tittle, .our-fratures__tittle, .experince__tittle h1, .some-facts__tittle h1, .spoors__tittle {
+    .baner__tittle, .our-fratures__tittle, .experince__tittle h1, .some-facts__text h1, .spoors__tittle {
         font-size: 25px;
     }
     .baner__decription {
@@ -495,7 +494,7 @@ justify-content: center;
         margin: 20px 0px;
         font-size: 40px;
     }
-    .some-facts__tittle {
+    .some-facts__text {
         text-align: center;
     }
     .some-facts, .spoors{
