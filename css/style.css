@@ -4,7 +4,6 @@
     --secondary-dark: #727272;
     --highlight-color: #FF900E;
 }
-
 body {
     font-family: 'Work Sans', sans-serif;
     box-sizing: border-box;
@@ -81,6 +80,10 @@ Baner section design  */
     border-style: none;
     border-radius: 8px;
     margin: 20px 0px 40px 0px;
+    transition: 1s;
+}
+.baner__btn:hover {
+    transform: scale(1.1);
 }
 .banner-image{
     display: flex;
@@ -243,6 +246,12 @@ Some facts style design  */
     padding: 30px 10px;
     margin-top: 40px;
     width: 100%;
+    transition: 1s;
+}
+.some-facts__box:hover {
+    background-color: #FF900E;
+    transform: scale(1.1);
+    color: wheat;
 }
 .some-facts__box h1{
     font-size: 35px;
@@ -314,6 +323,104 @@ Footer style design  */
     line-height: 20px;
     color: var(--secondary-dark);
 }
+
+/* ----------------------
+Contact section Style  */
+.contact {
+display: flex;
+justify-content: center;
+
+}
+.contact__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    grid-column-gap: 20px;
+}
+.contact__tittle {
+    font-size: 35px;
+    color: var(--prymari-color);
+}
+.contact__description {
+    font-size: 16px;
+    color: var(--secondary-dark);
+    font-weight: 400;
+    line-height: 22px;
+}
+.contact__text {
+    display: flex;
+    flex-direction: column;
+}
+.contacr__form {
+    display: flex;
+    row-gap: 25px;
+    flex-direction: column;
+}
+.contacr__form input:focus{
+    border: 2px solid var(--highlight-color);
+    border-radius: 8px;
+}
+.contacr__form input:active{
+    border: 2px solid var(--highlight-color);
+    border-radius: 8px;
+    border-color: transparent;
+}
+.contacr__form input {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 15px;
+    border-color: transparent;
+    border-bottom: 1px solid var(--highlight-color);
+    
+}
+.contacr__form textarea {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 15px;
+    border-color: transparent;
+    border-bottom: 1px solid var(--highlight-color);
+    
+}
+.contacr__form textarea:focus {
+    border: 2px solid var(--highlight-color);
+    border-radius: 8px;
+}
+.Contact__btn {
+    font-size: 16px;
+    max-width: 30%;
+    font-weight: 600;
+    color: white;
+    padding: 15px 22px;
+    background-color: var(--highlight-color);
+    border-style: none;
+    border-radius: 8px;
+    margin: 20px 0px 40px 0px;
+    transition: 1s;
+}
+.contact__info {
+    display: flex;
+    justify-content: center;
+    background-color: var(--highlight-color);
+    align-items: center;
+}
+.cintact__info--link {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+.cintact__info--link li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+.cintact__info--link li i{
+    font-size: 30px;
+    color: var(--highlight-color);
+}
+
+
 
 /* Start respoosive Medeia queary  */
 @media only screen and (max-width: 576px) {
