@@ -10,7 +10,11 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* ------------------
+Comon Design  */
+.horizental__line {
+    border: 1px solid var(--secondary-dark);
+}
 /* -------------------
 Header section style  */
 .header {
@@ -359,6 +363,7 @@ justify-content: center;
 .contacr__form input:focus{
     border: 2px solid var(--highlight-color);
     border-radius: 8px;
+    
 }
 .contacr__form input:active{
     border: 2px solid var(--highlight-color);
@@ -371,6 +376,7 @@ justify-content: center;
     padding: 15px 15px;
     border-color: transparent;
     border-bottom: 1px solid var(--highlight-color);
+    outline: none;
     
 }
 .contacr__form textarea {
@@ -379,6 +385,7 @@ justify-content: center;
     padding: 15px 15px;
     border-color: transparent;
     border-bottom: 1px solid var(--highlight-color);
+    outline: none;
     
 }
 .contacr__form textarea:focus {
@@ -400,30 +407,49 @@ justify-content: center;
 .contact__info {
     display: flex;
     justify-content: center;
-    background-color: var(--highlight-color);
+    background-color: #FFF4E7;
     align-items: center;
 }
 .cintact__info--link {
     display: flex;
     gap: 50px;
     flex-direction: column;
+    padding: 0;
 }
 .cintact__info--link li {
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 5px;
+    row-gap: 2px;
 }
 .cintact__info--link li i{
-    font-size: 30px;
+    font-size: 40px;
     color: var(--highlight-color);
+}
+.cintact__info--link li p{
+    font-size: 18px;
+    color: var(--secondary-dark);
 }
 
 
 
 /* Start respoosive Medeia queary  */
 @media only screen and (max-width: 576px) {
+    .header__logo {
+        display: flex;
+        justify-content: center;
+    }
+    .header__logo--tittle {
+        text-align: center;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        padding: 5px 15px;
+    }
+    .header__container, .header__link{
+        flex-direction: column;
+        padding: 0;
+    }
     .baner__tittle, .our-fratures__tittle, .experince__tittle h1, .some-facts__tittle h1, .spoors__tittle {
         font-size: 25px;
     }
@@ -479,19 +505,10 @@ justify-content: center;
         text-align: center;
         padding: 0px 20px;
     }
+    .contact__container {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
     
-}
-
-
-
-
-
-
-
-
-
-
-
-.hide {
-    display: none
+    
 }
