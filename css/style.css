@@ -13,7 +13,7 @@ body {
 /* ------------------
 Comon Design  */
 .horizental__line {
-    border: 1px solid var(--secondary-dark);
+    border: 1px solid #ddd;
 }
 /* -------------------
 Header section style  */
@@ -214,6 +214,16 @@ our-fratures Section design  */
     display: block;
     
 }
+.experince__category__person button:hover {
+    color: var(--highlight-color);
+    background-color: #eee;
+    border: none;
+}
+.experince__category__person :hover span{
+    color: var(--highlight-color);
+    background-color: #eee;
+    border: none;
+}
 .experince__category__person img{
     width: 100%;
 }
@@ -394,7 +404,7 @@ justify-content: center;
 }
 .Contact__btn {
     font-size: 16px;
-    max-width: 30%;
+    max-width: 50%;
     font-weight: 600;
     color: white;
     padding: 15px 22px;
@@ -509,6 +519,13 @@ justify-content: center;
         grid-template-columns: repeat(1, 1fr);
         
     }
-    
-    
+    .contact__info {
+        border-radius: 8px;
+    }
+    .cintact__info--link {
+        padding-top: 15px;
+    }
+    .Contact__btn {
+        text-align: center;
+    }   
 }
